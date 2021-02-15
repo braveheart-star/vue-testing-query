@@ -23,11 +23,9 @@
         <button class="submitButton" type="submit">Submit</button>
       </div>
     </form>
-    <div>
-      <p>chart data</p>
+    <div class="displayData">
+      <p>Chart Data for each Country:</p>
       <p>{{ currentChartData }}</p>
-      <p>Total Death</p>
-      <p>{{ currentTotalDeath }}</p>
     </div>
   </div>
 </template>
@@ -82,5 +80,11 @@ export default {
   border: 1px solid black;
   padding: 1px 5px;
   border-radius: 3px;
+}
+.displayData {
+  margin: 10px 20px;
+  max-width: 32rem;
+  border: 1px solid green;
+  padding: 10px;
 }
 </style>
